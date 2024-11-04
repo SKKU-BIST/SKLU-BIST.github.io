@@ -37,14 +37,45 @@ To monitor, an in-situ pressure behavior model was developed. During the modelin
 <p class="spaced">
 </p>
 
-<p align="center">
-    <a href="https://raw.githubusercontent.com/skku-bist/skku-bist/main/assets/example_ontology.rdf" download="example_ontology.rdf">
-        <button style="padding: 10px 20px; font-size: 16px; background-color: #4CAF50; color: white; border: none; border-radius: 5px;">
-            Download example_ontology.rdf
-        </button>
-    </a>
-</p>
+# Example RDF Content
 
+<p>아래의 상자에서 `.rdf` 파일 내용을 복사할 수 있습니다. 내용이 길기 때문에 스크롤을 통해 필요한 부분만 볼 수 있습니다.</p>
+
+<div style="border: 1px solid #ddd; padding: 10px; background-color: #f9f9f9; overflow: auto; max-height: 400px; white-space: pre;">
+<?xml version="1.0" encoding="utf-8"?>
+&lt;rdf:RDF
+   xmlns:brick1="https://brickschema.org/schema/1.2/Brick#"
+   xmlns:VB="https://skku-bist.github.io/method#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+&gt;
+  &lt;rdf:Description rdf:about="https://skku-bist.github.io/method#BehaviorModel_DT"&gt;
+    &lt;VB:hasVirtualdataOf rdf:resource="https://skku-bist.github.io/method#VirtualData_DT"/&gt;
+    &lt;VB:isAssembledWith rdf:resource="https://skku-bist.github.io/method#CorrectionModel_SP"/&gt;
+  &lt;/rdf:Description&gt;
+  
+  &lt;rdf:Description rdf:about="https://skku-bist.github.io/method#VirtualData_DT"&gt;
+    &lt;VB:isInputOf rdf:resource="https://skku-bist.github.io/method#CorrectionModel_SP"/&gt;
+    &lt;brick1:hasTag rdf:resource="https://brickschema.org/schema/1.2/Brick#Water_Differential_Temperature_Sensor"/&gt;
+  &lt;/rdf:Description&gt;
+  
+  &lt;rdf:Description rdf:about="https://brickschema.org/schema/1.2/Brick#Supply_Pressure_Sensor"&gt;
+    &lt;brick1:isPointOf rdf:resource="https://brickschema.org/schema/1.2/Brick#Heat_Exchanger"/&gt;
+  &lt;/rdf:Description&gt;
+
+  <!-- 이하 생략 -->
+
+  &lt;rdf:Description rdf:about="https://skku-bist.github.io/method#DistanceModel_SP"&gt;
+    &lt;VB:estimates rdf:resource="https://skku-bist.github.io/method#CorrectionModel_SP"/&gt;
+    &lt;brick1:hasTag rdf:resource="https://brickschema.org/schema/1.2/Brick#Supply_Pressure_Sensor"/&gt;
+  &lt;/rdf:Description&gt;
+&lt;/rdf:RDF&gt;
+</div>
+
+<style>
+    div {
+        font-family: monospace;
+    }
+</style>
 
 
 <style>
