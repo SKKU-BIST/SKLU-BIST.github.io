@@ -3,19 +3,6 @@ layout: default
 title: Method
 ---
 
-<style>
-    hr.thin {
-        border: 0;
-        height: 1px;
-        background: #ccc;
-    }
-    
-    .spaced {
-        margin-top: 20px;
-        margin-bottom: 20px;
-    }
-</style>
-
 <hr class="thin">
 
 # VB schema
@@ -183,3 +170,18 @@ The subject virtual model represents the behavior of the object physical entity.
 </p>
 
 <hr class="thin">
+
+<style>
+    hr.thin {
+        border: 0;
+        height: 1px;
+        background: #ccc;
+    }
+    
+    .spaced {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+</style>
+
+
