@@ -8,7 +8,7 @@ title: Example
 # Ontological representation of the virtual supply pressure sensor
 
 <p class="spaced">
-The example ontology represents the virtual supply pressure sensor, expressed using both the VB schema and the Brick schema. This ontology illustrates the relationships between various virtual models used to develop the virtual supply pressure sensor, as well as the physical entities corresponding to the real-world equipment and data applied to the system. The figure shows the interactions between entities, with a particular emphasis on the interactions between the virtual supply pressure model, correction model, and distance model. The labeled nodes and edges within the ontology contribute to a comprehensive understanding of the structure and logic of the represented system.
+The example ontology represents the virtual supply pressure sensor, expressed using both the VB schema and the Brick schema. This ontology illustrates the relationships between various virtual models used to develop the virtual supply pressure sensor, as well as the physical entities corresponding to the real-world equipment and data applied to the system. 
 </p>
 
 <script type="text/javascript" id="MathJax-script" async
