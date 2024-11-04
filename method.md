@@ -3,14 +3,14 @@ layout: default
 title: Method
 ---
 
-**VB schema**
+# VB schema
 
 The relationship between data and virtual models, as well as the classes for data and virtual models are defined
 
 <img src="/assets/images/Fig_1.png" alt="Project Overview" width="500" style="display: block; margin: 0 auto;">
 
 
-**The integration of the VB schema and Brick schema**
+# The integration of the VB schema and Brick schema
 
 To implement the VB schema for building digital twinning, it is essential to use sensor data collected from actual buildings to achieve various applications. Therefore, the Brick schema, which describes the actual building system, was integrated with the VB schema.
 
@@ -23,20 +23,18 @@ To implement the VB schema for building digital twinning, it is essential to use
 The development of wireless communication technologies, such as the Internet of Things (IoT), and building management systems (BMS) resulted in significant improvements in the field of data collection. As tremendous amounts of data have accumulated in recent years, the integration of data from various sources and effective data management are now available. Therefore, in this context, three data subclasses were defined according to the data sources in the VB schema. 
 
 | [On-site data](#on-site-data)   | [Off-site data](#off-site-data)  | [Virtual data](#virtual-data)   |
-|----------------------------------|----------------------------------|---------------------------------|
+
 
 # Virtual Model Classification
 
 Modeling an accurate behavior model is challenging because of the continuous changes in the systems being built over time. To address this issue, it is crucial to model the behavior of a virtual building, detect anomalies, and calibrate the target virtual behavior model during the building operation phase. Therefore, based on the perspectives of VIM and VIC, three subclasses of virtual models–the (1) behavior model, (2) correction model, and (3) distance model–are defined.
 
 | [Behavior model](#behavior-model) | [Correction model](#correction-model) | [Distance model](#distance-model) |
-|-----------------------------------|---------------------------------------|-----------------------------------|
 
 # Relationships
 Relationships depict interactions and associations between entities. There are four types of relationships: (1) model-model relationships, (2) model–data relationships, (3) model– physical entity relationship, and (4) model– application entity relationship. Model–model relationships represent interactions within the virtual model, while model–data relationships capture interactions between the virtual model and data. Model–physical entity relationships describe a unidirectional connection, where the model represents the behavior of the target physical entity. Lastly, model–application relationships describe how the model is used for the execution of an application.
 
 | [isAssembledWith](#isassembledwith) | [isLinkedWith](#islinkedwith) | [calibrates](#calibrates) | [estimates](#estimates) | [isInputOf](#isinputof) | [hasVirtualData](#hasvirtualdata) | [isUsedFor](#isusedfor) | [isVirtualModelOf](#isvirtualmodelof) |
-|-------------------------------------|-------------------------------|----------------------------|--------------------------|--------------------------|----------------------------------|--------------------------|--------------------------------------|
 
 ---
 
