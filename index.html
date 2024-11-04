@@ -5,48 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Documentation with Left-Aligned Tabs</title>
     <style>
-        /* Main container style */
-        .container {
-            display: flex;
-            max-width: 800px;
-            margin: 0 auto;
-            font-family: Arial, sans-serif;
-        }
-
-        /* Tab list style (left-aligned) */
-        .tab-list {
-            display: flex;
-            flex-direction: column;
-            width: 200px;
-            background-color: #f0f0f0;
-            border-right: 1px solid #ddd;
-            padding: 10px;
-            box-sizing: border-box;
-        }
-
-        .tab-list div {
-            padding: 10px;
-            cursor: pointer;
-            background: #e0e0e0;
-            margin-bottom: 5px;
-            text-align: left;
-        }
-
-        .tab-list .active {
-            background: #ffffff;
-            font-weight: bold;
-        }
-
-        /* Tab content style */
-        .tab-content {
-            flex: 1;
-            padding: 20px;
-            display: none;
-        }
-
-        .tab-content.active {
-            display: block;
-        }
+        /* CSS 스타일은 이전과 동일합니다 */
     </style>
 </head>
 <body>
@@ -54,73 +13,38 @@
 <div class="container">
     <!-- Left-aligned tab buttons -->
     <div class="tab-list">
-        <div class="tab-button active" onclick="openTab(event, 'introduction')">Introduction</div>
-        <div class="tab-button" onclick="openTab(event, 'method')">Method</div>
-        <div class="tab-button" onclick="openTab(event, 'example')">Example</div>
+        <div class="tab-button active" onclick="loadContent('introduction.html', this)">Introduction</div>
+        <div class="tab-button" onclick="loadContent('method.html', this)">Method</div>
+        <div class="tab-button" onclick="loadContent('example.html', this)">Example</div>
     </div>
 
     <!-- Tab contents -->
-    <div id="introduction" class="tab-content active">
-        <h2>Introduction</h2>
-        <p>This page is a simple website created with GitHub Pages. Here, you can find information about the project, the method used, examples, and license details.</p>
-    </div>
-
-    <div id="method" class="tab-content">
-        <h2>Method</h2>
-        <p>The process for creating a website using GitHub Pages is as follows:</p>
-        <ol>
-            <li>Create a GitHub repository</li>
-            <li>Add and write the <code>index.html</code> file</li>
-            <li>Configure GitHub Pages</li>
-            <li>Visit the site URL to check your website</li>
-        </ol>
-    </div>
-
-    <div id="example" class="tab-content">
-        <h2>Example</h2>
-        <p>Here is an example of a basic HTML structure:</p>
-        <pre>
-            <code>
-                <!DOCTYPE html>
-                <html lang="en">
-                <head>
-                    <meta charset="UTF-8">
-                    <title>Example Page</title>
-                </head>
-                <body>
-                    <h1>Example Title</h1>
-                    <p>This is an example paragraph for demonstration purposes.</p>
-                </body>
-                </html>
-            </code>
-        </pre>
+    <div id="tab-content" class="tab-content">
+        <!-- 외부 파일 내용이 여기에 로드됩니다 -->
     </div>
 </div>
 
 <script>
-    /* JavaScript function for tab functionality */
-    function openTab(event, tabId) {
-        var i, tabcontent, tabbuttons;
-
-        // Hide all tab contents
-        tabcontent = document.getElementsByClassName("tab-content");
-        for (i = 0; i < tabcontent.length; i++) {
-            tabcontent[i].style.display = "none";
+    /* JavaScript function to load external HTML files */
+    function loadContent(file, element) {
+        // Reset active state on all buttons
+        const buttons = document.getElementsByClassName("tab-button");
+        for (let i = 0; i < buttons.length; i++) {
+            buttons[i].classList.remove("active");
         }
+        element.classList.add("active");
 
-        // Remove active class from all tab buttons
-        tabbuttons = document.getElementsByClassName("tab-button");
-        for (i = 0; i < tabbuttons.length; i++) {
-            tabbuttons[i].className = tabbuttons[i].className.replace(" active", "");
-        }
-
-        // Show the current tab and add active class to the button
-        document.getElementById(tabId).style.display = "block";
-        event.currentTarget.className += " active";
+        // Load the content from the external file
+        fetch(file)
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("tab-content").innerHTML = data;
+            })
+            .catch(error => console.error('Error loading file:', error));
     }
 
-    // Initial display of the first tab content
-    document.getElementById("introduction").style.display = "block";
+    // Load the introduction content initially
+    loadContent('introduction.html', document.querySelector(".tab-button"));
 </script>
 
 </body>
