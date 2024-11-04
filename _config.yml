@@ -1,9 +1,4 @@
 title: "VB schema"
-theme: jekyll-theme-cayman  # GitHub Pages 호환 테마 중 하나 선택
+theme: jekyll-theme-cayman  # 또는 원하는 테마
 plugins:
-  - jekyll-gitbook
-
-# Navigation data file
-collections:
-  data:
-    output: true
+  - jekyll-data
