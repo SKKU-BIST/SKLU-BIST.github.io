@@ -158,3 +158,5 @@ The subject virtual model is utilized to conduct object application.
 ## <a id="isvirtualmodelof"></a>isVirtualModelOf
 
 The subject virtual model represents the behavior of the object physical entity.
+
+<hr class="thin">
