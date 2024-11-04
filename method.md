@@ -20,6 +20,5 @@ To implement the VB schema for building digital twinning, it is essential to use
 **Data classification**
 The development of wireless communication technologies, such as the Internet of Things (IoT), and building management systems (BMS) resulted in significant improvements in the field of data collection. As tremendous amounts of data have accumulated in recent years, the integration of data from various sources and effective data management are now available. Therefore, in this context, three data subclasses were defined according to the data sources in the VB schema. 
 
-| Column 1       | Column 2       | Column 3       |
-|----------------|----------------|----------------|
 | On-site data   | Off-site data  | Virtual data   |
+|----------------|----------------|----------------|
