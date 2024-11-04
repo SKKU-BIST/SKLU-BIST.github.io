@@ -1,1 +1,1 @@
-# SKLU-BIST.github.io
+# skku-bist.github.io
