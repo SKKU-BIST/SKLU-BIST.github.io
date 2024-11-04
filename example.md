@@ -28,13 +28,23 @@ To monitor, an in-situ pressure behavior model was developed. During the modelin
 <p id="eq2"><strong>Eq. 2:</strong></p>
 <p>$$ f_c(X_c, \theta_c) = \theta_{c,1} + \theta_{c,2} \times (T_{sup} - T_{ret}) $$</p>
 
+<p class="spaced">
+</p>
+<p class="spaced">
+</p>
+<p class="spaced">
+</p>
+<p class="spaced">
+</p>
+
 <p align="center">
-    <a href="assets/example_ontology.rdf" download>
+    <a href="https://raw.githubusercontent.com/your-username/your-repo/main/assets/example_ontology.rdf" download="example_ontology.rdf">
         <button style="padding: 10px 20px; font-size: 16px; background-color: #4CAF50; color: white; border: none; border-radius: 5px;">
             Download example_ontology.rdf
         </button>
     </a>
 </p>
+
 
 
 <style>
