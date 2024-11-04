@@ -156,7 +156,6 @@ To monitor, an in-situ pressure behavior model was developed. During the modelin
 
 <style>
     div {
-        font-family: monospace;
     }
 </style>
 
