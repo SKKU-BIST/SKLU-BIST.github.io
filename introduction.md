@@ -2,7 +2,7 @@
 layout: default
 title: Introduction
 ---
-
+<hr class="thin">
 # Concept
 
 <p class="spaced">
