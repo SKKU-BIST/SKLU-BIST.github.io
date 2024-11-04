@@ -17,8 +17,6 @@ Virtual building model metadata schema (named VB schema) is a metadata schema th
 
 # Related Concept and Definitions
 
-<hr class="thin">
-
 ## Virtual Building Model (VBM)
 
 <p class="spaced">
