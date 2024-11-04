@@ -15,6 +15,7 @@ The example ontology represents the virtual supply pressure sensor, expressed us
   src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 </script>
 
+<hr class="thin">
 <h1>The Scenario for VB Schema-Based Developed Virtual Supply Pressure Model through VIM and VIC</h1>
 
 <p class="spaced">
@@ -35,7 +36,6 @@ To monitor, an in-situ pressure behavior model was developed. During the modelin
     </a>
 </p>
 
-<hr class="thin">
 
 <style>
     .spaced {
