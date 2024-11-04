@@ -16,6 +16,7 @@ The example ontology represents the virtual supply pressure sensor, expressed us
 </script>
 
 <hr class="thin">
+
 ## The Scenario for VB Schema-Based Developed Virtual Supply Pressure Model through VIM and VIC
 
 <p class="spaced">
@@ -28,137 +29,41 @@ To monitor, an in-situ pressure behavior model was developed. During the modelin
 <p id="eq2"><strong>Eq. 2:</strong></p>
 <p>$$ f_c(X_c, \theta_c) = \theta_{c,1} + \theta_{c,2} \times (T_{sup} - T_{ret}) $$</p>
 
-<p class="spaced">
-</p>
-<p class="spaced">
-</p>
-<p class="spaced">
-</p>
-<p class="spaced">
-</p>
+<hr class="thin">
 
 # Example RDF Content
 
 <p>아래의 상자에서 `.rdf` 파일 내용을 복사할 수 있습니다. 내용이 길기 때문에 스크롤을 통해 필요한 부분만 볼 수 있습니다.</p>
 
-<div style="border: 1px solid #ddd; padding: 10px; background-color: #f9f9f9; overflow: auto; max-height: 400px; white-space: pre;">
-<?xml version="1.0" encoding="utf-8"?>
-<rdf:RDF
+<div style="border: 1px solid #ddd; padding: 10px; background-color: #f9f9f9; overflow: auto; max-height: 400px; white-space: pre; font-family: monospace;">
+&lt;?xml version="1.0" encoding="utf-8"?&gt;
+&lt;rdf:RDF
    xmlns:brick1="https://brickschema.org/schema/1.2/Brick#"
    xmlns:VB="https://skku-bist.github.io/method#"
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
->
-  <rdf:Description rdf:about="https://skku-bist.github.io/method#BehaviorModel_DT">
-    <VB:hasVirtualdataOf rdf:resource="https://skku-bist.github.io/method#VirtualData_DT"/>
-    <VB:isAssembledWith rdf:resource="https://skku-bist.github.io/method#CorrectionModel_SP"/>
-  </rdf:Description>
+&gt;
+  &lt;rdf:Description rdf:about="https://skku-bist.github.io/method#BehaviorModel_DT"&gt;
+    &lt;VB:hasVirtualdataOf rdf:resource="https://skku-bist.github.io/method#VirtualData_DT"/&gt;
+    &lt;VB:isAssembledWith rdf:resource="https://skku-bist.github.io/method#CorrectionModel_SP"/&gt;
+  &lt;/rdf:Description&gt;
   
-  <rdf:Description rdf:about="https://skku-bist.github.io/method#VirtualData_DT">
-    <VB:isInputOf rdf:resource="https://skku-bist.github.io/method#CorrectionModel_SP"/>
-    <brick1:hasTag rdf:resource="https://brickschema.org/schema/1.2/Brick#Water_Differential_Temperature_Sensor"/>
-  </rdf:Description>
+  &lt;rdf:Description rdf:about="https://skku-bist.github.io/method#VirtualData_DT"&gt;
+    &lt;VB:isInputOf rdf:resource="https://skku-bist.github.io/method#CorrectionModel_SP"/&gt;
+    &lt;brick1:hasTag rdf:resource="https://brickschema.org/schema/1.2/Brick#Water_Differential_Temperature_Sensor"/&gt;
+  &lt;/rdf:Description&gt;
   
-  <rdf:Description rdf:about="https://brickschema.org/schema/1.2/Brick#Supply_Pressure_Sensor">
-    <brick1:isPointOf rdf:resource="https://brickschema.org/schema/1.2/Brick#Heat_Exchanger"/>
-  </rdf:Description>
+  &lt;rdf:Description rdf:about="https://brickschema.org/schema/1.2/Brick#Supply_Pressure_Sensor"&gt;
+    &lt;brick1:isPointOf rdf:resource="https://brickschema.org/schema/1.2/Brick#Heat_Exchanger"/&gt;
+  &lt;/rdf:Description&gt;
   
-  <rdf:Description rdf:about="https://skku-bist.github.io/method#IntrusiveData_SP">
-    <VB:isInputOf rdf:resource="https://skku-bist.github.io/method#DistanceModel_SP"/>
-    <brick1:hasTag rdf:resource="https://brickschema.org/schema/1.2/Brick#Supply_Pressure_Sensor"/>
-  </rdf:Description>
-  
-  <rdf:Description rdf:about="https://skku-bist.github.io/method#BehaviorModel_SP">
-    <VB:hasVirtualdataOf rdf:resource="https://skku-bist.github.io/method#VirtualData_SP"/>
-    <VB:isLinkedWith rdf:resource="https://skku-bist.github.io/method#DistanceModel_SP"/>
-    <brick1:hasTag rdf:resource="https://brickschema.org/schema/1.2/Brick#Supply_Pressure_Sensor"/>
-  </rdf:Description>
-  
-  <rdf:Description rdf:about="https://brickschema.org/schema/1.2/Brick#Pump">
-    <brick1:hasPoint rdf:resource="https://brickschema.org/schema/1.2/Brick#Pump_Frequency_Sensor"/>
-  </rdf:Description>
-  
-  <rdf:Description rdf:about="https://skku-bist.github.io/method#NonintrusiveData_2ST">
-    <VB:isInputOf rdf:resource="https://skku-bist.github.io/method#BehaviorModel_DT"/>
-    <brick1:hasTag rdf:resource="https://brickschema.org/schema/1.2/Brick#Heat_Exchanger_Supply_Water_Temperature_Sensor"/>
-  </rdf:Description>
-  
-  <rdf:Description rdf:about="https://brickschema.org/schema/1.2/Brick#Primary_Supply_Temperature_Sensor">
-    <brick1:isPointOf rdf:resource="https://brickschema.org/schema/1.2/Brick#Heat_Exchanger"/>
-  </rdf:Description>
-  
-  <rdf:Description rdf:about="https://skku-bist.github.io/method#NonintrusiveData_RP">
-    <VB:isInputOf rdf:resource="https://skku-bist.github.io/method#BehaviorModel_SP"/>
-    <brick1:hasTag rdf:resource="https://brickschema.org/schema/1.2/Brick#Return_Pressure_Sensor"/>
-  </rdf:Description>
-  
-  <rdf:Description rdf:about="https://brickschema.org/schema/1.2/Brick#Differential_Pressure_Control_Valve">
-    <brick1:hasPoint rdf:resource="https://brickschema.org/schema/1.2/Brick#Differential_Pressure_Sensor"/>
-    <brick1:hasPoint rdf:resource="https://brickschema.org/schema/1.2/Brick#DPV_Valve_Opening"/>
-  </rdf:Description>
-  
-  <rdf:Description rdf:about="https://brickschema.org/schema/1.2/Brick#District_Heating_System">
-    <brick1:hasPart rdf:resource="https://brickschema.org/schema/1.2/Brick#Pump"/>
-    <brick1:hasPart rdf:resource="https://brickschema.org/schema/1.2/Brick#Temperature_Control_Valve"/>
-    <brick1:hasPart rdf:resource="https://brickschema.org/schema/1.2/Brick#Differential_Pressure_Control_Valve"/>
-    <brick1:hasPart rdf:resource="https://brickschema.org/schema/1.2/Brick#Heat_Exchanger"/>
-  </rdf:Description>
-  
-  <rdf:Description rdf:about="https://brickschema.org/schema/1.2/Brick#Return_Pressure_Sensor">
-    <brick1:isPointOf rdf:resource="https://brickschema.org/schema/1.2/Brick#Heat_Exchanger"/>
-  </rdf:Description>
-  
-  <rdf:Description rdf:about="https://skku-bist.github.io/method#VirtualData_SP">
-    <VB:isInputOf rdf:resource="https://skku-bist.github.io/method#DistanceModel_SP"/>
-    <brick1:hasTag rdf:resource="https://brickschema.org/schema/1.2/Brick#Supply_Pressure_Sensor"/>
-  </rdf:Description>
-  
-  <rdf:Description rdf:about="https://skku-bist.github.io/method#CorrectionModel_SP">
-    <VB:calibrates rdf:resource="https://skku-bist.github.io/method#BehaviorModel_SP"/>
-    <brick1:hasTag rdf:resource="https://brickschema.org/schema/1.2/Brick#Supply_Pressure_Sensor"/>
-  </rdf:Description>
-  
-  <rdf:Description rdf:about="https://skku-bist.github.io/method#ontology">
-  </rdf:Description>
-  
-  <rdf:Description rdf:about="https://brickschema.org/schema/1.2/Brick#Temperature_Control_Valve">
-    <brick1:hasPoint rdf:resource="https://brickschema.org/schema/1.2/Brick#TCV_Valve_Opening"/>
-    <brick1:controls rdf:resource="https://brickschema.org/schema/1.2/Brick#Supply_Setpoint_Temperature"/>
-  </rdf:Description>
-  
-  <rdf:Description rdf:about="https://skku-bist.github.io/method#NonintrusiveData_2RT">
-    <VB:isInputOf rdf:resource="https://skku-bist.github.io/method#BehaviorModel_DT"/>
-    <brick1:hasTag rdf:resource="https://brickschema.org/schema/1.2/Brick#Return_Water_Temperature_Sensor"/>
-  </rdf:Description>
-  
-  <rdf:Description rdf:about="https://brickschema.org/schema/1.2/Brick#Heat_Exchanger_Supply_Water_Temperature_Sensor">
-    <brick1:isPointOf rdf:resource="https://brickschema.org/schema/1.2/Brick#Heat_Exchanger"/>
-  </rdf:Description>
-  
-  <rdf:Description rdf:about="https://brickschema.org/schema/1.2/Brick#Return_Water_Temperature_Sensor">
-    <brick1:isPointOf rdf:resource="https://brickschema.org/schema/1.2/Brick#Heat_Exchanger"/>
-  </rdf:Description>
-  
-  <rdf:Description rdf:about="https://brickschema.org/schema/1.2/Brick#Primary_Return_Temperature_Sensor">
-    <brick1:isPointOf rdf:resource="https://brickschema.org/schema/1.2/Brick#Heat_Exchanger"/>
-  </rdf:Description>
-  
-  <rdf:Description rdf:about="https://skku-bist.github.io/method#NonintrusiveData_PF">
-    <VB:isInputOf rdf:resource="https://skku-bist.github.io/method#BehaviorModel_SP"/>
-    <brick1:hasTag rdf:resource="https://brickschema.org/schema/1.2/Brick#Pump_Frequency_Sensor"/>
-  </rdf:Description>
-  
-  <rdf:Description rdf:about="https://skku-bist.github.io/method#DistanceModel_SP">
-    <VB:estimates rdf:resource="https://skku-bist.github.io/method#CorrectionModel_SP"/>
-    <brick1:hasTag rdf:resource="https://brickschema.org/schema/1.2/Brick#Supply_Pressure_Sensor"/>
-  </rdf:Description>
-</rdf:RDF>
+  <!-- 중략 -->
+
+  &lt;rdf:Description rdf:about="https://skku-bist.github.io/method#DistanceModel_SP"&gt;
+    &lt;VB:estimates rdf:resource="https://skku-bist.github.io/method#CorrectionModel_SP"/&gt;
+    &lt;brick1:hasTag rdf:resource="https://brickschema.org/schema/1.2/Brick#Supply_Pressure_Sensor"/&gt;
+  &lt;/rdf:Description&gt;
+&lt;/rdf:RDF&gt;
 </div>
-
-<style>
-    div {
-    }
-</style>
-
 
 <style>
     .spaced {
