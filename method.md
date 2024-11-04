@@ -3,16 +3,23 @@ layout: default
 title: Method
 ---
 
-This section describes the methodology employed in this documentation. Each step has been meticulously designed to ensure accuracy, efficiency, and scalability across various applications. Below is an overview of our methods, complete with steps and an outline of each process.
+**VB schema**
+The relationship between data and virtual models, as well as the classes for data and virtual models are defined
 
-1. **Data Collection**: Initial data collection involves gathering structural, environmental, and operational data related to the building. This data is used to create a foundational model.
-   
-2. **Model Calibration**: Calibration of the digital model is essential to ensure its accuracy. This involves comparing the model's predictions with real-world measurements and adjusting parameters accordingly.
+<img src="/assets/images/Fig_1.png" alt="Project Overview" width="500" style="display: block; margin: 0 auto;">
 
-3. **Real-time Monitoring**: The digital model is connected to real-time data streams that provide live information about the building's performance, allowing the model to adjust dynamically to reflect current conditions.
+---
 
-4. **Predictive Analysis**: Using historical data, the model can predict future outcomes, helping to identify potential issues before they arise.
+**The integration of the VB schema and Brick schema**
+To implement the VB schema for building digital twinning, it is essential to use sensor data collected from actual buildings to achieve various applications. Therefore, the Brick schema, which describes the actual building system, was integrated with the VB schema.
 
-5. **Optimization**: Based on the model's predictive capabilities, various optimization techniques are applied to improve building performance, such as energy efficiency, HVAC efficiency, and structural integrity.
+<img src="/assets/images/Fig_1.png" alt="Project Overview" width="500" style="display: block; margin: 0 auto;">
 
-Through these methods, the documentation provides a detailed pathway to creating a resilient digital twin that is both adaptive and predictive. Each step is further expanded with examples and case studies relevant to our project.
+---
+
+**Data classification**
+The development of wireless communication technologies, such as the Internet of Things (IoT), and building management systems (BMS) resulted in significant improvements in the field of data collection. As tremendous amounts of data have accumulated in recent years, the integration of data from various sources and effective data management are now available. Therefore, in this context, three data subclasses were defined according to the data sources in the VB schema. 
+
+| Column 1       | Column 2       | Column 3       |
+|----------------|----------------|----------------|
+| On-site data   | Off-site data  | Virtual data   |
