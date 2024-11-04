@@ -18,11 +18,8 @@ title: Method
     }
 </style>
 
-<hr class="thin">
-
-<p class="spaced">
 The relationship between data and virtual models, as well as the classes for data and virtual models are defined.
-</p>
+
 
 <p align="center">
     <img src="/assets/images/Fig_2.png" alt="Project Overview" width="500">
