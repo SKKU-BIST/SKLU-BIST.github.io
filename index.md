@@ -3,8 +3,6 @@ layout: default
 title: Overview
 ---
 
-# Overview
-
 This documentation provides an in-depth look into various methods and examples relevant to our project. We aim to guide you through each part, from the introductory overview to detailed methodology and practical examples.
 
 ## Introduction
