@@ -16,12 +16,13 @@
         html, body {
             font-family: Arial, sans-serif;
             height: 100%;
+            overflow-y: scroll; /* 전체 페이지에서 하나의 스크롤바만 유지 */
         }
         
         .container {
             display: flex;
             width: 100%;
-            height: 100vh;
+            min-height: 100vh; /* 페이지 전체 높이 */
         }
         
         /* 고정된 사이드바 스타일 */
@@ -33,7 +34,6 @@
             position: fixed;
             top: 0;
             left: 0;
-            overflow-y: auto;
         }
         
         aside h2 {
@@ -74,8 +74,6 @@
             flex: 1;
             padding: 20px;
             margin-left: 220px; /* 사이드바 공간 확보 */
-            overflow-y: auto;
-            height: 100vh; /* 화면 전체 높이 설정 */
         }
         
         /* 오른쪽 상단 버전 및 라이선스 정보 */
