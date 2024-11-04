@@ -1,4 +1,4 @@
-title: "Virtual building model metadata schema (VB schema)"
+title: "VB schema"
 theme: jekyll-theme-cayman  # GitHub Pages 호환 테마 중 하나 선택
 plugins:
   - jekyll-gitbook
