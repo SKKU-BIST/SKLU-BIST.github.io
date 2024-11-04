@@ -3,8 +3,6 @@ layout: default
 title: Example
 ---
 
-# Example
-
 Here is an example of a basic HTML structure:
 ```html
 <!DOCTYPE html>
