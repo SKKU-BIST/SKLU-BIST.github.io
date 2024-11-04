@@ -64,6 +64,11 @@ Relationships depict interactions and associations between entities. There are f
 
 <hr class="thin">
 
+<p class="spaced">
+</p>
+<p class="spaced">
+</p>
+
 ## <a id="on-site-data"></a>On-site Data
 
 On-site data are a subclass of operational data collected by physical sensing networks within target building operations. They are further divided into two categories: (1) nonintrusive data, collected through a built-in sensor network within the building system, and (2) intrusive data, gathered through additional measurements using temporary sensing devices with extra effort.
