@@ -18,13 +18,11 @@ title: Method
     }
 </style>
 
-
-
 <hr class="thin">
 
 <p class="spaced">
-
-The relationship between data and virtual models, as well as the classes for data and virtual models are defined
+The relationship between data and virtual models, as well as the classes for data and virtual models are defined.
+</p>
 
 <p align="center">
     <img src="/assets/images/Fig_2.png" alt="Project Overview" width="500">
@@ -32,10 +30,7 @@ The relationship between data and virtual models, as well as the classes for dat
 
 <hr class="thin">
 
-<p class="spaced">
-
 # The integration of the VB schema and Brick schema
-
 
 To implement the VB schema for building digital twinning, it is essential to use sensor data collected from actual buildings to achieve various applications. Therefore, the Brick schema, which describes the actual building system, was integrated with the VB schema.
 
@@ -45,17 +40,13 @@ To implement the VB schema for building digital twinning, it is essential to use
 
 <hr class="thin">
 
-<p class="spaced">
-
 # Data Classification
 
-The development of wireless communication technologies, such as the Internet of Things (IoT), and building management systems (BMS) resulted in significant improvements in the field of data collection. As tremendous amounts of data have accumulated in recent years, the integration of data from various sources and effective data management are now available. Therefore, in this context, three data subclasses were defined according to the data sources in the VB schema. 
+The development of wireless communication technologies, such as the Internet of Things (IoT), and building management systems (BMS) resulted in significant improvements in the field of data collection. As tremendous amounts of data have accumulated in recent years, the integration of data from various sources and effective data management are now available. Therefore, in this context, three data subclasses were defined according to the data sources in the VB schema.
 
 | [On-site data](#on-site-data)   | [Off-site data](#off-site-data)  | [Virtual data](#virtual-data)   |
 
 <hr class="thin">
-
-<p class="spaced">
 
 # Virtual Model Classification
 
@@ -65,25 +56,19 @@ Modeling an accurate behavior model is challenging because of the continuous cha
 
 <hr class="thin">
 
-<p class="spaced">
-
 # Relationships
-Relationships depict interactions and associations between entities. There are four types of relationships: (1) model-model relationships, (2) model–data relationships, (3) model– physical entity relationship, and (4) model– application entity relationship. Model–model relationships represent interactions within the virtual model, while model–data relationships capture interactions between the virtual model and data. Model–physical entity relationships describe a unidirectional connection, where the model represents the behavior of the target physical entity. Lastly, model–application relationships describe how the model is used for the execution of an application.
+
+Relationships depict interactions and associations between entities. There are four types of relationships: (1) model-model relationships, (2) model–data relationships, (3) model–physical entity relationship, and (4) model–application entity relationship. Model–model relationships represent interactions within the virtual model, while model–data relationships capture interactions between the virtual model and data. Model–physical entity relationships describe a unidirectional connection, where the model represents the behavior of the target physical entity. Lastly, model–application relationships describe how the model is used for the execution of an application.
 
 | [isAssembledWith](#isassembledwith) | [isLinkedWith](#islinkedwith) | [calibrates](#calibrates) | [estimates](#estimates) | [isInputOf](#isinputof) | [hasVirtualData](#hasvirtualdata) | [isUsedFor](#isusedfor) | [isVirtualModelOf](#isvirtualmodelof) |
 
 <hr class="thin">
 
-<p class="spaced">
-
 ## <a id="on-site-data"></a>On-site Data
 
 On-site data are a subclass of operational data collected by physical sensing networks within target building operations. They are further divided into two categories: (1) nonintrusive data, collected through a built-in sensor network within the building system, and (2) intrusive data, gathered through additional measurements using temporary sensing devices with extra effort.
 
-
 <hr class="thin">
-
-<p class="spaced">
 
 ## <a id="off-site-data"></a>Off-site Data
 
@@ -91,15 +76,11 @@ Off-site data are a subclass of data obtained from sources outside an existing s
 
 <hr class="thin">
 
-<p class="spaced">
-
 ## <a id="virtual-data"></a>Virtual Data
 
 Virtual data are a subclass of data calculated using virtual models. They have the potential to expand the sensing range and validate and calibrate both physical and virtual data by leveraging virtual models and other DT elements.
 
 <hr class="thin">
-
-<p class="spaced">
 
 ## <a id="behavior-model"></a>Behavior Model
 
@@ -107,15 +88,11 @@ The behavior model is a subclass of the virtual model that describes the physica
 
 <hr class="thin">
 
-<p class="spaced">
-
 ## <a id="correction-model"></a>Correction Model
 
 The correction model is a subclass of the virtual model that explains the gap between the ground truth values and the output variable of the behavior model. Since the main objective of the correction model is to calibrate the behavior model, when the behavior model turns out to be no longer valid, the correction model calibrates in the behavior model for model calibration.
 
 <hr class="thin">
-
-<p class="spaced">
 
 ## <a id="distance-model"></a>Distance Model
 
@@ -123,15 +100,11 @@ The distance model is a subclass of virtual models used for the verification and
 
 <hr class="thin">
 
-<p class="spaced">
-
 ## <a id="isassembledwith"></a>isAssembledWith
 
 The output variable of the subject behavior model is utilized as the input variable in the object virtual models through the model assembly technique [42]. The output variable of the subject behavior model is utilized as the input variable in the object virtual models through the model assembly technique.
 
 <hr class="thin">
-
-<p class="spaced">
 
 ## <a id="islinkedwith"></a>isLinkedWith
 
@@ -139,15 +112,11 @@ The output variable of the subject behavior model is utilized as the input varia
 
 <hr class="thin">
 
-<p class="spaced">
-
 ## <a id="calibrates"></a>calibrates
 
 The subject correction model enhances the performance of the object behavior model.
 
 <hr class="thin">
-
-<p class="spaced">
 
 ## <a id="estimates"></a>estimates
 
@@ -155,15 +124,11 @@ The subject distance model is used to estimate the model parameter of the object
 
 <hr class="thin">
 
-<p class="spaced">
-
 ## <a id="isinputof"></a>isInputOf
 
 The subject data is used as an input variable in the object virtual model.
 
 <hr class="thin">
-
-<p class="spaced">
 
 ## <a id="hasvirtualdata"></a>hasVirtualData
 
@@ -171,15 +136,11 @@ The subject virtual model serves as a function to derive the object virtual data
 
 <hr class="thin">
 
-<p class="spaced">
-    
 ## <a id="isusedfor"></a>isUsedFor
 
 The subject virtual model is utilized to conduct object application.
 
 <hr class="thin">
-
-<p class="spaced">
 
 ## <a id="isvirtualmodelof"></a>isVirtualModelOf
 
