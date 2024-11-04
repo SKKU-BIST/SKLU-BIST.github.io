@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Concept
+title: Introduction
 ---
 Related concept and definitions
 ---
