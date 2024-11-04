@@ -8,7 +8,7 @@ Concept
 Virtual building model metadata schema (named VB schema) is a metadata schema that describes VBMs representing physical behaviors in DT-enabled building operations. The VB schema was established based on an ontology that identifies the semantic relationships of virtual sub-models composing the VBM in a DT. The VB schema is used as a management means for accurately modeling VBMs by utilizing VIM and VIC. In order to incorporate VIM and VIC into the process of creating and calibrating virtual models that compose VBMs, the relationship between data and virtual models, as well as the classes for data and virtual models, are defined
 
 <p align="center">
-    <img src="/assets/images/introduction-image.jpg" alt="Project Overview" width="150">
+    <img src="/assets/images/Fig_2.png" alt="Project Overview" width="150">
 </p>
 
 Related concept and definitions
