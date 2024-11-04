@@ -1,3 +1,6 @@
+- title: "VB schema"
+  url: /index  # index.md 파일로 연결
+
 - title: "Introduction"
   url: /introduction
 
