@@ -17,7 +17,7 @@ The relationship between data and virtual models, as well as the classes for dat
 To implement the VB schema for building digital twinning, it is essential to use sensor data collected from actual buildings to achieve various applications. Therefore, the Brick schema, which describes the actual building system, was integrated with the VB schema.
 
 <p align="center">
-    <img src="/assets/images/Fig_3.png" alt="Project Overview" width="500">
+    <img src="/assets/images/Fig_3.png" alt="Project Overview" width="700">
 </p>
 
 
