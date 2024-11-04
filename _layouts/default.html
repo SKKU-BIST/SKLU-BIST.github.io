@@ -7,7 +7,7 @@
     <style>
         /* 기본 스타일 */
         html {
-            overflow-y: scroll; /* 스크롤바를 항상 표시하여 페이지 이동 시 화면이 흔들리지 않게 함 */
+            overflow-y: scroll; /* 스크롤바 항상 표시 */
         }
         body {
             font-family: Arial, sans-serif;
@@ -83,7 +83,7 @@
             <ul>
                 {% for item in site.data.navigation %}
                 <li>
-                    <a href="{{ item.url }}" class="{% if page.url == item.url or (page.url == '/index.html' and item.url == '/index') %}active{% endif %}">
+                    <a href="{{ item.url }}" class="{% if item.url == page.url or item.url == page.url | replace:'/index.html', '/index' %}active{% endif %}">
                         {{ item.title }}
                     </a>
                 </li>
