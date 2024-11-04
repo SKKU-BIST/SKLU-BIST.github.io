@@ -34,7 +34,7 @@ To monitor, an in-situ pressure behavior model was developed. During the modelin
 ## Example RDF Content
 
 
-<div style="border: 1px solid #ddd; padding: 10px; background-color: #f9f9f9; overflow: auto; max-height: 400px; white-space: pre; font-family: monospace;">
+<textarea style="width: 100%; height: 400px; border: 1px solid #ddd; padding: 10px; background-color: #f9f9f9; font-family: monospace;">
 <?xml version="1.0" encoding="utf-8"?>
 <rdf:RDF
    xmlns:brick1="https://brickschema.org/schema/1.2/Brick#"
@@ -145,7 +145,8 @@ To monitor, an in-situ pressure behavior model was developed. During the modelin
     <brick1:hasTag rdf:resource="https://brickschema.org/schema/1.2/Brick#Supply_Pressure_Sensor"/>
   </rdf:Description>
 </rdf:RDF>
-</div>
+
+</textarea>
 
 <style>
     .spaced {
