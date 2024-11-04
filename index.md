@@ -47,14 +47,3 @@ For older buildings, ensuring structural integrity is paramount. In this example
 
 These examples showcase the potential of digital twin technology to transform building management, providing tools for optimization, safety, and predictive analysis.
 
----
-
-이렇게 작성된 **index.md**는 각 섹션에 풍부한 내용을 포함하여 한 페이지로 길게 구성되었습니다. 
-
-### 3. 변경 사항 저장 및 푸시
-모든 변경 사항을 저장하고, GitHub에 푸시하여 반영하세요.
-
-```bash
-git add .
-git commit -m "Update sidebar to Overview and extend index.md content"
-git push origin main
