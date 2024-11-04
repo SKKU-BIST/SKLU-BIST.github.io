@@ -1,8 +1,18 @@
 ---
 layout: default
-title: Introduction
+title: Overview
 ---
 
-# Introduction
+# Overview
 
-This is the introduction section of the documentation.
+## Introduction
+
+Welcome to the introduction section of this documentation. This provides an overview of the main topics.
+
+## Method
+
+This section describes the method used in this documentation.
+
+## Example
+
+Here is an example of how to structure a page.
