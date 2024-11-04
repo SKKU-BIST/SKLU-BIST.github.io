@@ -5,8 +5,36 @@ title: Example
 
 <hr class="thin">
 
+## Ontological representation of the virtual supply pressure sensor
+
+<p class="spaced">
+The example ontology represents the virtual supply pressure sensor, expressed using both the VB schema and the Brick schema. This ontology illustrates the relationships between various virtual models used to develop the virtual supply pressure sensor, as well as the physical entities corresponding to the real-world equipment and data applied to the system. 
+</p>
+
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+
+<hr class="thin">
+
+## The Scenario for VB Schema-Based Developed Virtual Supply Pressure Model through VIM and VIC
+
+<p class="spaced">
+To monitor, an in-situ pressure behavior model was developed. During the modeling phase, it was assumed that the supply pressure was unobserved, resulting in the implementation of a white-box modeling approach to develop the initial supply pressure model using <a href="#eq1">(Eq. 1)</a>. To calibrate the developed behavior model, an intrusive measurement was conducted from December 16, 2019, to December 20, 2019. This measurement aimed to determine the correction parameters in <a href="#eq2">(Eq. 2)</a> using the Markov chain Monte Carlo (MCMC) method and the Metropolis–Hastings algorithm.
+</p>
+
+<p id="eq1"><strong>Eq. 1:</strong></p>
+<p>$$ P_{sup} = H_{ref} \left( \frac{f_{pu}}{f_{ref}} \right)^2 + P_{ret} $$</p>
+
+<p id="eq2"><strong>Eq. 2:</strong></p>
+<p>$$ f_c(X_c, \theta_c) = \theta_{c,1} + \theta_{c,2} \times (T_{sup} - T_{ret}) $$</p>
+
+<hr class="thin">
+
 ## Example RDF Content
-<textarea style="width: 100%; height: 400px; border: 1px solid #ddd; padding: 10px; background-color: #f9f9f9; font-family: monospace;">
+
+
+<div style="border: 1px solid #ddd; padding: 10px; background-color: #f9f9f9; overflow: auto; max-height: 400px; white-space: pre; font-family: monospace;">
 <?xml version="1.0" encoding="utf-8"?>
 <rdf:RDF
    xmlns:brick1="https://brickschema.org/schema/1.2/Brick#"
@@ -117,5 +145,17 @@ title: Example
     <brick1:hasTag rdf:resource="https://brickschema.org/schema/1.2/Brick#Supply_Pressure_Sensor"/>
   </rdf:Description>
 </rdf:RDF>
+</div>
 
-</textarea>
+<style>
+    .spaced {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    
+    hr.thin {
+        border: 0;
+        height: 1px;
+        background: #ccc;
+    }
+</style>
