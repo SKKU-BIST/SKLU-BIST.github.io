@@ -38,7 +38,7 @@ To monitor, an in-situ pressure behavior model was developed. During the modelin
 </p>
 
 <p align="center">
-    <a href="https://raw.githubusercontent.com/your-username/your-repo/main/assets/example_ontology.rdf" download="example_ontology.rdf">
+    <a href="https://raw.githubusercontent.com/skku-bist/skku-bist/main/assets/example_ontology.rdf" download="example_ontology.rdf">
         <button style="padding: 10px 20px; font-size: 16px; background-color: #4CAF50; color: white; border: none; border-radius: 5px;">
             Download example_ontology.rdf
         </button>
