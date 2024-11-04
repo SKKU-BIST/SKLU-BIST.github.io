@@ -7,14 +7,19 @@ title: Method
 
 The relationship between data and virtual models, as well as the classes for data and virtual models are defined
 
-<img src="/assets/images/Fig_1.png" alt="Project Overview" width="500" style="display: block; margin: 0 auto;">
+<p align="center">
+    <img src="/assets/images/Fig_2.png" alt="Project Overview" width="500">
+</p>
 
 
 # The integration of the VB schema and Brick schema
 
 To implement the VB schema for building digital twinning, it is essential to use sensor data collected from actual buildings to achieve various applications. Therefore, the Brick schema, which describes the actual building system, was integrated with the VB schema.
 
-<img src="/assets/images/Fig_1.png" alt="Project Overview" width="500" style="display: block; margin: 0 auto;">
+<p align="center">
+    <img src="/assets/images/Fig_3.png" alt="Project Overview" width="500">
+</p>
+
 
 ---
 
