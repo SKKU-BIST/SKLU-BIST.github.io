@@ -1,0 +1,9 @@
+title: "My GitBook Style Documentation"
+theme: jekyll-theme-cayman  # GitHub Pages 호환 테마 중 하나 선택
+plugins:
+  - jekyll-gitbook
+
+# Navigation data file
+collections:
+  data:
+    output: true
