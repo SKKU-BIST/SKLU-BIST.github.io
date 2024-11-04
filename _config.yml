@@ -1,4 +1,8 @@
 title: "VB schema"
-theme: jekyll-theme-cayman  # 또는 원하는 테마
+theme: jekyll-theme-cayman
 plugins:
   - jekyll-data
+
+# 버전 및 라이선스 정보
+version: "1.0.0"
+license: "SKKU-BIST License"
