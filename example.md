@@ -33,8 +33,6 @@ To monitor, an in-situ pressure behavior model was developed. During the modelin
 
 # Example RDF Content
 
-<p>아래의 상자에서 `.rdf` 파일 내용을 복사할 수 있습니다. 내용이 길기 때문에 스크롤을 통해 필요한 부분만 볼 수 있습니다.</p>
-
 <div style="border: 1px solid #ddd; padding: 10px; background-color: #f9f9f9; overflow: auto; max-height: 400px; white-space: pre; font-family: monospace;">
 &lt;?xml version="1.0" encoding="utf-8"?&gt;
 &lt;rdf:RDF
