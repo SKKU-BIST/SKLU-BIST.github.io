@@ -2,7 +2,7 @@
 layout: default
 title: Method
 ---
-
+<hr class="thin">
 # VB schema
 
 <style>
